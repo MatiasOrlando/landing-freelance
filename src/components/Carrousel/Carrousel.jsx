@@ -39,7 +39,7 @@ const data = [
 const Carrousel = () => {
   return (
     <>
-      <h2 className="xl:text-xl  lg:text-lg md:text-lg sm:text-base xs: text-sm text-center mt-16">
+      <h2 className="xl:text-xl  lg:text-lg md:text-lg sm:text-base xs:text-base text-center mt-16">
         Clientes satisfechos
       </h2>
       <Swiper
