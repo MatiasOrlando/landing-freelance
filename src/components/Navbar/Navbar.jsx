@@ -73,7 +73,7 @@ const Navbar = () => {
             </div>
           </div>
           <div className="hidden space-x-2 md:inline-block">
-            <a className="px-4 py-2 text-white bg-gray-600 rounded-md shadow hover:bg-gray-800">
+            <a className="px-4 py-2 text-[white] bg-secondary rounded-md shadow hover:bg-gray-800">
               Contacto
             </a>
           </div>
