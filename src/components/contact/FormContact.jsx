@@ -21,6 +21,8 @@ const ContactSchema = Yup.object().shape({
     .required('Este campo es requerido!'),
 });
 
+//todo que envie el mail a aylen
+
 const FormContact = ({ setState }) => {
   const classInputs =
     ' w-[327px] lg:w-[370px] h-[60px] border-secondary border-[1px] rounded-[5px] pl-4';
