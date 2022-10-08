@@ -1,7 +1,13 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from "swiper";
+import SwiperCore, {
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+  Controller,
+} from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -42,9 +48,10 @@ const Carrousel = () => {
       <h2 className="xl:text-xl  lg:text-lg md:text-lg sm:text-base text-center mt-16 font-roboto font-bold text-secondary">
         Clientes satisfechos
       </h2>
+
       <Swiper
         className="mt-16  w-4/6 swiper-container pb-3 mb-20"
-        modules={[Navigation, Pagination, Scrollbar, A11y]}
+        modules={[Navigation, Pagination, Scrollbar, A11y, Controller]}
         spaceBetween={40}
         slidesPerView={2}
         navigation
