@@ -1,19 +1,13 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import SwiperCore, {
-  Navigation,
-  Pagination,
-  Scrollbar,
-  A11y,
-  Controller,
-} from "swiper";
+import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
-SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
+SwiperCore.use([Navigation, Pagination, A11y]);
 
 const data = [
   {
@@ -51,12 +45,11 @@ const Carrousel = () => {
 
       <Swiper
         className="mt-16  w-4/6 swiper-container pb-3 mb-20"
-        modules={[Navigation, Pagination, Scrollbar, A11y, Controller]}
+        modules={[Navigation, Pagination, Scrollbar, A11y]}
         spaceBetween={40}
         slidesPerView={2}
         navigation
         pagination={{ clickable: true }}
-        scrollbar={{ draggable: true }}
         breakpoints={{
           440: {
             width: 440,
