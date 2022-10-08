@@ -1,11 +1,13 @@
 import React, { useState } from "react";
+import { ImFacebook } from "react-icons/im";
+import { BsInstagram } from "react-icons/bs";
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
 
   return (
     <div>
-      <nav className="w-full bg-white-500 shadow">
+      <nav className="w-full bg-primary">
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
@@ -50,30 +52,36 @@ const Navbar = () => {
               </div>
             </div>
           </div>
-          <div>
+          <div className="">
             <div
-              className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
+              className={`flex-1 flex justify-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
                 navbar ? "block" : "hidden"
               }`}
             >
               <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
                 <li className="text-black hover:text-indigo-200">
-                  <a>Inicio</a>
+                  <p style={{ color: "#FDCAE1" }} className="flex">
+                    <BsInstagram
+                      style={{ color: "#FDCAE1" }}
+                      className="w-[22px] h-[22px]"
+                    />{" "}
+                    @xxxxxx
+                  </p>
                 </li>
                 <li className="text-black hover:text-indigo-200">
-                  <a>Servicios</a>
-                </li>
-                <li className="text-black hover:text-indigo-200">
-                  <a>Nosotros </a>
-                </li>
-                <li className="text-black hover:text-indigo-200">
-                  <a>Info</a>
+                  <p style={{ color: "#FDCAE1" }} className="flex">
+                    <ImFacebook
+                      style={{ color: "#FDCAE1" }}
+                      className="w-[20px] h-[20px]"
+                    />
+                    /xxxxxx
+                  </p>
                 </li>
               </ul>
             </div>
           </div>
           <div className="hidden space-x-2 md:inline-block">
-            <a className="px-4 py-2 text-white bg-gray-600 rounded-md shadow hover:bg-gray-800">
+            <a className="px-4 py-2 text-[white] bg-secondary rounded-md shadow hover:bg-gray-800">
               Contacto
             </a>
           </div>

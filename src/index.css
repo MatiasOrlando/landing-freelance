@@ -1,32 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-.slide-content {
-  background-color: rgb(235, 225, 225);
-  width: 200px;
-}
 
 .swiper-container {
   width: 480px;
 }
 
+.hrFooter {
+  width: 75%;
+  border: 0;
+  clear: both;
+  background-color: white;
+  height: 1px;
+}
+
 /* Media queries Swiper  Component */
-@media (min-width: 100px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .swiper-container {
-    width: 440px;
+    width: 397px;
+    padding-left: 23px;
+  }
+  .slide-content {
+    width: 270px;
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-  .slide {
-    padding-left: 70px;
+@media (min-width: 180px) and (max-width: 769px) {
+  .swiper-container {
+    padding-left: 50px;
+  }
+  .slide-content {
+    width: 250px;
   }
 }
 
 @media (min-width: 1025px) and (max-width: 2000px) {
   .swiper-container {
     width: 768px;
+  }
+}
+
+/* Media queries Footer  Component */
+
+@media (min-width: 100px) and (max-width: 780px) {
+  .footContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .contactInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .lastQuote {
+    width: 80%;
   }
 }
