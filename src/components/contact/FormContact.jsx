@@ -94,7 +94,7 @@ const FormContact = ({ setState }) => {
           />
           <button
             type='submit'
-            className=' w-[327px] lg:w-[370px] h-[64px] text-[#fff] bg-secondary rounded-[8px]'
+            className=' w-[327px] lg:w-[370px] h-[64px] text-[#fff] bg-secondary rounded-[8px] hover:bg-[#f9f9f9] shadow-md hover:text-secondary ease-linear transition-all duration-200'
           >
             Enviar
           </button>
