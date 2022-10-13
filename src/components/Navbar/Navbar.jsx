@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import { ImFacebook } from "react-icons/im";
-import { BsInstagram } from "react-icons/bs";
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
@@ -12,7 +10,10 @@ const Navbar = () => {
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
               <a>
-                <h2 className="text-2xl font-bold text-black">LOGO</h2>
+                <img
+                  className="w-[178px] h-[38px]"
+                  src="assets/logoFooter.png"
+                />
               </a>
               <div className="md:hidden">
                 <button
@@ -61,7 +62,8 @@ const Navbar = () => {
               <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
                 <li className="text-black hover:text-indigo-200">
                   <p style={{ color: "#FDCAE1" }} className="flex">
-                    <BsInstagram
+                    <img
+                      src="/assets/instagram.png"
                       style={{ color: "#FDCAE1" }}
                       className="w-[22px] h-[22px]"
                     />{" "}
@@ -70,9 +72,10 @@ const Navbar = () => {
                 </li>
                 <li className="text-black hover:text-indigo-200">
                   <p style={{ color: "#FDCAE1" }} className="flex">
-                    <ImFacebook
+                    <img
+                      src="/assets/facebook.png"
                       style={{ color: "#FDCAE1" }}
-                      className="w-[20px] h-[20px]"
+                      className="w-[9.34px] h-[18px]"
                     />
                     /xxxxxx
                   </p>
@@ -81,9 +84,10 @@ const Navbar = () => {
             </div>
           </div>
           <div className="hidden space-x-2 md:inline-block">
-            <a className="px-4 py-2 text-[white] bg-secondary rounded-md shadow hover:bg-gray-800">
-              Contacto
-            </a>
+            <button className="flex justify-around w-[140px] h-[40px] px-4 py-2 text-[white] bg-secondary rounded-md shadow hover:bg-gray-800">
+              <p>Contacto</p>
+              <img src="assets/whatsapp.png" />
+            </button>
           </div>
         </div>
       </nav>
