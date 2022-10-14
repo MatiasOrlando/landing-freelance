@@ -84,10 +84,16 @@ const Navbar = () => {
             </div>
           </div>
           <div className="hidden space-x-2 md:inline-block">
-            <button className="flex justify-around w-[140px] h-[40px] px-4 py-2 text-[white] bg-secondary rounded-md shadow hover:bg-gray-800">
-              <p>Contacto</p>
-              <img src="assets/whatsapp.png" />
-            </button>
+            <a
+              class="fab fa-whatsapp"
+              href="https://wa.me/32644704492/?text=tu%20texto%20personalizado"
+              target="_blank"
+            >
+              <button className="flex justify-around w-[140px] h-[40px] px-4 py-2 text-[white] bg-secondary rounded-md shadow hover:bg-gray-800">
+                <p>Contacto</p>
+                <img src="assets/whatsapp.png" />
+              </button>
+            </a>
           </div>
         </div>
       </nav>
