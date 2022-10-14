@@ -42,7 +42,6 @@
 }
 
 /* Media queries Footer  Component */
-
 @media (min-width: 100px) and (max-width: 780px) {
   .footContainer {
     display: flex;
@@ -53,7 +52,8 @@
     flex-direction: row;
     justify-content: space-evenly;
   }
-  .lastQuote {
-    width: 80%;
+  .socialFooter {
+    padding-top: 75px;
+    padding-bottom: 50px;
   }
 }
