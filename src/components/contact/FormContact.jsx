@@ -1,5 +1,5 @@
-import React from 'react';
-
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import { Formik, Form, Field } from 'formik';
 import * as Yup from 'yup';
 
@@ -7,7 +7,7 @@ const ContactSchema = Yup.object().shape({
   fullName: Yup.string()
     .min(6, 'muy corto!')
     .max(50, 'muy largo!')
-    .required('Ingrese un nombre valido!'),
+    .required('Este campo es requerido!'),
   email: Yup.string()
     .email('email invalido')
     .required('Este campo es requerido!'),
@@ -34,26 +34,29 @@ const FormContact = ({ setState }) => {
     textArea: '',
   };
 
+  const form = useRef();
+
   return (
     <Formik
       initialValues={initialValues}
       validationSchema={ContactSchema}
       onSubmit={(values, { resetForm }) => {
         setState(true);
+        emailjs
+          .sendForm(
+            'aylen-freelance',
+            'template_vemuohl',
+            form.current,
+            'Dy08KZjDfWS2Bmb7W'
+          )
+          .then((res) => console.log(res))
+          .catch((err) => console.log(err));
         resetForm();
-        console.log(values);
+        // console.log(values);
       }}
     >
       {({ values, handleBlur, handleChange, errors, touched }) => (
-        <Form className='flex flex-col gap-5 font-roboto'>
-          {(errors.fullName && touched.fullName) ||
-          (errors.email && touched.email) ||
-          (errors.phone && touched.phone) ||
-          (errors.textArea && touched.textArea) ? (
-            <p className='text-[#ff0000]'>
-              Debe completar los campos requeridos
-            </p>
-          ) : null}
+        <Form ref={form} className='flex flex-col gap-5 font-roboto'>
           <Field
             className={classInputs}
             placeholder='Nombre y Apellido(*)'
@@ -64,6 +67,9 @@ const FormContact = ({ setState }) => {
             onChange={handleChange}
             onBlur={handleBlur}
           />
+          {errors.fullName && touched.fullName && (
+            <p className='text-[#ff0000]'>{errors.fullName}</p>
+          )}
           <Field
             className={classInputs}
             placeholder='Email(*)'
@@ -74,6 +80,10 @@ const FormContact = ({ setState }) => {
             onChange={handleChange}
             onBlur={handleBlur}
           />
+          {errors.email && touched.email && (
+            <p className='text-[#ff0000]'>{errors.email}</p>
+          )}
+
           <Field
             className={classInputs}
             placeholder='Telefono'
@@ -84,6 +94,10 @@ const FormContact = ({ setState }) => {
             onChange={handleChange}
             onBlur={handleBlur}
           />
+          {errors.phone && touched.phone && (
+            <p className='text-[#ff0000]'>{errors.phone}</p>
+          )}
+
           <textarea
             placeholder='Motivo de consulta(*)'
             name='textArea'
@@ -92,6 +106,10 @@ const FormContact = ({ setState }) => {
             onChange={handleChange}
             onBlur={handleBlur}
           />
+          {errors.textArea && touched.textArea && (
+            <p className='text-[#ff0000]'>{errors.textArea}</p>
+          )}
+
           <button
             type='submit'
             className=' w-[327px] lg:w-[370px] h-[64px] text-[#fff] bg-secondary rounded-[8px] hover:bg-[#f9f9f9] shadow-md hover:text-secondary ease-linear transition-all duration-200'

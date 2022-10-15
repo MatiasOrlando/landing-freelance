@@ -7,7 +7,7 @@ const ContactCont = () => {
   const [state, setState] = useState(false);
 
   return (
-    <div className='bg-rose h-[832px] lg:h-[591px] w-screen flex justify-around items-center'>
+    <div className='bg-rose min-h-[832px] lg:min-h-[591px] w-screen flex justify-around items-center'>
       <div className='flex flex-col lg:flex-row gap-4 lg:gap-56'>
         <Content />
         {state ? (
