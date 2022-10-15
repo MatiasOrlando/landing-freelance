@@ -11,7 +11,7 @@ import ServicesContainer from "./components/services/ServicesContainer";
 
 const App = () => {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <Navbar />
       <Banner />
       <ServicesContainer />
