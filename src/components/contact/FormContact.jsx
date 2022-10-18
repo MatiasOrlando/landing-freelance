@@ -55,7 +55,7 @@ const FormContact = ({ setState }) => {
       }}
     >
       {({ values, handleBlur, handleChange, errors, touched }) => (
-        <Form ref={form} className='flex flex-col gap-5 font-roboto'>
+        <Form ref={form} className='flex flex-col gap-5 font-roboto py-2'>
           <Field
             className={classInputs}
             placeholder='Nombre y Apellido(*)'
@@ -105,8 +105,8 @@ const FormContact = ({ setState }) => {
             onChange={handleChange}
             onBlur={handleBlur}
           />
-          {errors.textArea && touched.textArea && (
-            <p className='text-[#ff0000]'>{errors.textArea}</p>
+          {errors.message && touched.message && (
+            <p className='text-[#ff0000]'>{errors.message}</p>
           )}
 
           <button
