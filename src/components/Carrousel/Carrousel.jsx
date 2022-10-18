@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from "swiper";
@@ -37,18 +37,37 @@ const data = [
 ];
 
 const Carrousel = () => {
+  const nextBtn = useRef();
+  const prevBtn = useRef();
+  useEffect(() => {
+    function handleResize() {
+      if (window.innerWidth <= 890) {
+        nextBtn.current.classList = "swiper-button-hidden";
+        prevBtn.current.classList = "swiper-button-hidden";
+      }
+      if (window.innerWidth >= 891) {
+        nextBtn.current.classList = "swiper-button-next";
+        prevBtn.current.classList = "swiper-button-prev";
+      }
+    }
+    window.addEventListener("resize", handleResize);
+  }, [window]);
+
   return (
     <>
       <h2 className="xl:text-xl  lg:text-lg md:text-lg sm:text-base text-center mt-16 font-roboto font-bold text-secondary pb-[40px]">
         Clientes satisfechos
       </h2>
-      <div className="mb-[50px]">
+      <div className="mb-[50px] relative flex">
         <Swiper
-          className="swiper-container w-3/5 pb-[30px]"
+          className="swiper-container flex pb-[30px]"
           modules={[Navigation, Pagination, Scrollbar, A11y]}
           spaceBetween={20}
           slidesPerView={2}
-          navigation
+          navigation={{
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          }}
           pagination={{ clickable: true }}
           breakpoints={{
             320: {
@@ -72,7 +91,6 @@ const Carrousel = () => {
           }}
           onInit={(swiper) => (swiper.navigation.prevEl.style.display = "none")}
           onReachEnd={(swiper) => {
-            console.log(swiper);
             swiper.navigation.nextEl.style.display = "none";
             swiper.navigation.prevEl.style.display = "block";
           }}
@@ -84,7 +102,7 @@ const Carrousel = () => {
           {data.map((user) => (
             <SwiperSlide
               key={user.id}
-              className="flex justify-center slide pb-1"
+              className="flex items-center justify-center slide pb-1"
             >
               <div className="slide-content xl:w-[397px] lg:w-[397px] md:w-[350px] sm: w-[397px] xs:w-[300px] bg-primary  rounded-[8px]  text-[18px]  p-2">
                 <p className="flex justify-center text-[white] text-center user-testimonial md:text-lg sm:text-base xs: text-sm ">
@@ -104,6 +122,8 @@ const Carrousel = () => {
             </SwiperSlide>
           ))}
         </Swiper>
+        <div className="swiper-button-prev absolute" ref={prevBtn}></div>
+        <div className="swiper-button-next absolute" ref={nextBtn}></div>
       </div>
     </>
   );
