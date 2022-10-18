@@ -1,5 +1,5 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React from "react";
+import { motion } from "framer-motion";
 
 const ImageCard = ({ img }) => {
   return (
@@ -7,7 +7,7 @@ const ImageCard = ({ img }) => {
       <motion.img
         whileHover={{ scale: 1.1 }}
         src={img}
-        className='h-auto w-full object-cover object-center '
+        className="h-auto w-full object-cover object-center "
       />
     </div>
   );
