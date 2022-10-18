@@ -85,7 +85,7 @@ const Navbar = () => {
           </div>
           <div className='hidden space-x-2 md:inline-block'>
             <a
-              class='fab fa-whatsapp'
+              className='fab fa-whatsapp'
               href='https://wa.me/3571458344/?text=Contacta%20con%20Aylen%20por%20mensaje!'
               target='_blank'
             >

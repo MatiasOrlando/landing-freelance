@@ -15,7 +15,7 @@ const ContactSchema = Yup.object().shape({
     .min(8, 'muy corto!')
     .max(12, 'muy largo!')
     .required('Este campo es requerido!'),
-  textArea: Yup.string()
+  message: Yup.string()
     .min(6, 'muy corto!')
     .max(360, 'muy largo!')
     .required('Este campo es requerido!'),
@@ -31,7 +31,7 @@ const FormContact = ({ setState }) => {
     fullName: '',
     email: '',
     phone: '',
-    textArea: '',
+    message: '',
   };
 
   const form = useRef();
@@ -52,7 +52,6 @@ const FormContact = ({ setState }) => {
           .then((res) => console.log(res))
           .catch((err) => console.log(err));
         resetForm();
-        // console.log(values);
       }}
     >
       {({ values, handleBlur, handleChange, errors, touched }) => (
@@ -100,8 +99,8 @@ const FormContact = ({ setState }) => {
 
           <textarea
             placeholder='Motivo de consulta(*)'
-            name='textArea'
-            className='w-[327px] border-[1px] border-secondary lg:w-[370px] h-[146px] pl-4 pt-4 rounded-[5px]'
+            name='message'
+            className='w-[327px] border-[1px] border-secondary lg:w-[370px] h-[146px] px-4 pt-4 rounded-[5px]'
             value={values.textArea}
             onChange={handleChange}
             onBlur={handleBlur}
