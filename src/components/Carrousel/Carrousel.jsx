@@ -14,25 +14,25 @@ const data = [
     id: 1,
     username: "Matias",
     testimonial:
-      "lorem lorem lorem lorem  ipsum dolor sit,  lorem lorem lorem lorem  ipsum dolor sit",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quo perspiciatis iure nihil illum, hic voluptates voluptate aspernatur sequi.",
   },
   {
     id: 2,
     username: "Pablo",
     testimonial:
-      "lorem lorem lorem lorem  ipsum dolor sit,  lorem lorem lorem lorem  ipsum dolor sit",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quo perspiciatis iure nihil illum, hic voluptates voluptate aspernatur sequi.",
   },
   {
     id: 3,
     username: "Javier",
     testimonial:
-      "lorem lorem lorem lorem  ipsum dolor sit,  lorem lorem lorem lorem  ipsum dolor sit",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quo perspiciatis iure nihil illum, hic voluptates voluptate aspernatur sequi.",
   },
   {
     id: 4,
     username: "Martin",
     testimonial:
-      "lorem lorem lorem lorem  ipsum dolor sit,  lorem lorem lorem lorem  ipsum dolor sit",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quo perspiciatis iure nihil illum, hic voluptates voluptate aspernatur sequi.",
   },
 ];
 
@@ -41,11 +41,11 @@ const Carrousel = () => {
   const prevBtn = useRef();
   useEffect(() => {
     function handleResize() {
-      if (window.innerWidth <= 890) {
+      if (window.innerWidth <= 880) {
         nextBtn.current.classList = "swiper-button-hidden";
         prevBtn.current.classList = "swiper-button-hidden";
       }
-      if (window.innerWidth >= 891) {
+      if (window.innerWidth >= 881) {
         nextBtn.current.classList = "swiper-button-next";
         prevBtn.current.classList = "swiper-button-prev";
       }
@@ -55,10 +55,10 @@ const Carrousel = () => {
 
   return (
     <>
-      <h2 className="xl:text-xl  lg:text-lg md:text-lg sm:text-base text-center mt-16 font-roboto font-bold text-secondary pb-[40px]">
+      <h2 className="lg:text-[35px] text-[20px] text-center mt-16 font-roboto font-bold text-secondary pb-[83px] pt-[40px]">
         Clientes satisfechos
       </h2>
-      <div className="mb-[50px] relative flex">
+      <div className="mb-[127px] relative flex">
         <Swiper
           className="swiper-container flex pb-[30px]"
           modules={[Navigation, Pagination, Scrollbar, A11y]}
@@ -105,17 +105,17 @@ const Carrousel = () => {
               className="flex items-center justify-center slide pb-1"
             >
               <div className="slide-content xl:w-[397px] lg:w-[397px] md:w-[350px] sm: w-[397px] xs:w-[300px] bg-primary  rounded-[8px]  text-[18px]  p-2">
-                <p className="flex justify-center text-[white] text-center user-testimonial md:text-lg sm:text-base xs: text-sm ">
+                <p className="flex justify-center text-[white] text-center user-testimonial lg:text-lg md:text-base sm:text-base xs: text-sm pt-[20px] ">
                   <i>"{user.testimonial}"</i>
                 </p>
                 <div className="flex justify-center slide-inner">
                   <img
-                    src="/user1.png"
-                    alt="user"
-                    className="user-photo flex justify-center "
+                    src="/assets/reviewphoto.png"
+                    alt="client photo"
+                    className="user-photo flex justify-center pt-[32px]"
                   />
                 </div>
-                <h5 className="flex justify-center text-[white] pb-2 md:text-lg sm:text-base xs: text-sm">
+                <h5 className="flex justify-center text-[white] pb-2 lg:text-lg md:text-base sm:text-base xs: text-sm pt-[16px]">
                   {user.username}
                 </h5>
               </div>
