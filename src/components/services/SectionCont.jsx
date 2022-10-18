@@ -1,13 +1,14 @@
-import React from 'react';
-import ContentCard from './ContentCard';
-import ImageCard from './ImageCard';
+import React from "react";
+import ContentCard from "./ContentCard";
+import ImageCard from "./ImageCard";
 
 const SectionCont = ({ img, title, text, icon, reverse }) => {
   return (
     <div
-      className={`flex flex-col ${
-        reverse ? 'flex-col-reverse' : 'flex-col'
-      } flex-wrap lg:flex-row w-screen h-auto lg:min-h-[546px]`}
+      className={`flex xl:flex-row lg:flex-row md:flex-row sm:flex-row  w-screen
+      ${reverse ? "md:flex-col-reverse" : "md:flex-col"}  
+      ${reverse ? "sm:flex-col-reverse" : "sm:flex-col"}  
+      ${reverse ? "xs:flex-col-reverse" : "xs:flex-col"}`}
     >
       {reverse ? (
         <>
