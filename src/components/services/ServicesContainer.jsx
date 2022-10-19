@@ -3,7 +3,7 @@ import SectionCont from "./SectionCont";
 
 const ServicesContainer = () => {
   return (
-    <div className="mt-[-2.515px]">
+    <div className="">
       <SectionCont
         img="/assets/cards.png"
         title="Servicio 1"
