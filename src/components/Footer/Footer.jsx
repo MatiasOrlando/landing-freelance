@@ -10,10 +10,12 @@ const Footer = () => {
               className="w-[268px] h-[57px] mt-[50px] mb-[8px]"
               src="assets/logoFooter.png"
             />
-            <div className="text-[white] font-roboto">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Laudantium, molestias nostrum iste quae reiciendis libero
-              voluptate rerum est sunt official
+            <div className="text-[white] font-roboto text-[10px]">
+              Para ayudarte a superar tus problemas y que logres la vida más
+              plena que deseas, vamos a realizar juntos un tratamiento
+              personalizado a domicilio partiendo de una base de confianza,
+              respeto y confidencialidad. Encontremos la luz en tu interior para
+              que tus dificultades se marchen.
             </div>
           </div>
         </div>
