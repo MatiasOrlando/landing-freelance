@@ -9,7 +9,7 @@ const SenContainer = ({ text, bgImg }) => {
       }}
     >
       <h1 className="text-center text-[40px] lg:text-[35px] md:text-[25px] sm:text-[20px] xs:text-[15px]  xl:w-[982px] lg:w-[782px]  md:w-[682px] sm:w-[482px] xs:w-[382px]  leading-[1.5] font-roboto text-[#fff]">
-        {text}
+        "{text}"
       </h1>
     </div>
   );
