@@ -15,10 +15,19 @@ const App = () => {
       <Navbar />
       <Banner />
       <ServicesContainer />
-      <SenContainer />
+      <SenContainer
+        bgImg="/assets/frase1.png"
+        text="Un sanador no es alguien al que vas para que te cure. Un sanador es una
+        persona que despierta en ti, tu propia consciencia para sanarte a ti
+        mismo"
+      />
       <Aboutme />
       <Appointment />
-      <SenContainer />
+      <SenContainer
+        bgImg="/assets/frase2.png"
+        text="Hasta que lo inconsciente no se haga consciente, esto seguirá dirigiendo tu vida, y Tú lo 
+llamaras destino"
+      />
       <Carrousel />
       <ContactCont />
       <Footer />
