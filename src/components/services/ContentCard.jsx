@@ -12,7 +12,7 @@ const ContentCard = ({ title, text, icon }) => {
           <p className='text-primary lg:text-[18px] md:text-[14px] sm:text-[12px] xs:text-[10px]  min-w-[369px]'>
             {text}
           </p>
-          <div className='min-h-[150px] px-4 flex items-center '>
+          <div className='min-h-[150px] px-4 hidden lg:flex items-center '>
             {icon ? <WspIcon /> : null}
           </div>
         </div>
