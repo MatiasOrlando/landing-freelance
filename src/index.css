@@ -3,6 +3,9 @@
 @tailwind components;
 @tailwind utilities;
 
+.jeje {
+  background-color: #f796be;
+}
 .hrFooter {
   width: 75%;
   border: 0;
