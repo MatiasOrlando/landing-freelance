@@ -45,7 +45,7 @@ const FormContact = ({ setState }) => {
         emailjs
           .sendForm(
             'aylen-freelance',
-            'template_vemuohl',
+            'template_gkjlxii',
             form.current,
             'Dy08KZjDfWS2Bmb7W'
           )
@@ -55,8 +55,9 @@ const FormContact = ({ setState }) => {
       }}
     >
       {({ values, handleBlur, handleChange, errors, touched }) => (
-        <Form ref={form} className='flex flex-col gap-5 font-roboto py-2'>
+        <Form ref={form} className='flex flex-col gap-5 font-roboto py-5'>
           <Field
+            id='contact'
             className={classInputs}
             placeholder='Nombre y Apellido(*)'
             name='fullName'
@@ -111,7 +112,7 @@ const FormContact = ({ setState }) => {
 
           <button
             type='submit'
-            className=' w-[327px] lg:w-[370px] h-[64px] text-[#fff] bg-secondary rounded-[8px] hover:bg-[#f9f9f9] shadow-md hover:text-secondary ease-linear transition-all duration-200'
+            className=' w-[327px] lg:w-[370px] h-[64px] text-[#fff] mb-5 bg-secondary rounded-[8px] hover:bg-[#f9f9f9] shadow-md hover:text-secondary ease-linear transition-all duration-200'
           >
             Enviar
           </button>
