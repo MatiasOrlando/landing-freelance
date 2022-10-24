@@ -17,14 +17,14 @@ const Navbar = () => {
               </a>
               <div className="md:hidden">
                 <button
-                  className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
+                  className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 "
                   onClick={() => setNavbar(!navbar)}
                 >
                   {navbar ? (
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="w-6 h-6 text-black"
-                      viewBox="0 0 20 20"
+                      className="w-[40px]6 h-8 text-[#D9D9D9] "
+                      viewBox="0 0 16 16"
                       fill="currentColor"
                     >
                       <path
@@ -36,9 +36,9 @@ const Navbar = () => {
                   ) : (
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="w-6 h-6 text-black"
+                      className="w-[40px] h-8 text-[#D9D9D9] "
                       fill="none"
-                      viewBox="0 0 24 24"
+                      viewBox="0 0 20 20"
                       stroke="currentColor"
                       strokeWidth={2}
                     >
