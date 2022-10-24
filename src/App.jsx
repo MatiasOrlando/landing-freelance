@@ -1,20 +1,36 @@
-import React from 'react';
-import Appointment from './components/appointment/Appointment';
-import Banner from './components/banner/Banner';
-import Carrousel from './components/Carrousel/Carrousel';
-import ContactCont from './components/contact/contactCont';
-import Navbar from './components/Navbar/Navbar';
-import SenContainer from './components/sentence/SenContainer';
+import React from "react";
+import Aboutme from "./components/Aboutme/Aboutme";
+import Appointment from "./components/appointment/Appointment";
+import Banner from "./components/banner/Banner";
+import Carrousel from "./components/Carrousel/Carrousel";
+import ContactCont from "./components/contact/contactCont";
+import Footer from "./components/Footer/Footer";
+import Navbar from "./components/Navbar/Navbar";
+import SenContainer from "./components/sentence/SenContainer";
+import ServicesContainer from "./components/services/ServicesContainer";
 
 const App = () => {
   return (
-    <div className='overflow-x-hidden'>
+    <div className="overflow-x-hidden">
       <Navbar />
       <Banner />
+      <ServicesContainer />
+      <SenContainer
+        bgImg="/assets/frase1.png"
+        text="Un sanador no es alguien al que vas para que te cure. Un sanador es una
+        persona que despierta en ti, tu propia consciencia para sanarte a ti
+        mismo"
+      />
+      <Aboutme />
       <Appointment />
-      <SenContainer />
+      <SenContainer
+        bgImg="/assets/frase2.png"
+        text="Hasta que lo inconsciente no se haga consciente, esto seguirá dirigiendo tu vida, y Tú lo 
+llamaras destino"
+      />
       <Carrousel />
       <ContactCont />
+      <Footer />
     </div>
   );
 };

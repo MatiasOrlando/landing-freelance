@@ -12,7 +12,7 @@ const Appointment = () => {
           Mandanos un Whatsapp
         </h3>
       </div>
-      <Button text='Agendá tu cita' />
+      <Button wsp={true} text='Agendá tu cita' />
     </div>
   );
 };
