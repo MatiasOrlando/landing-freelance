@@ -24,7 +24,7 @@ const App = () => {
       <Aboutme />
       <Appointment />
       <SenContainer
-        bg="/assets/hola.png"
+        bg="/assets/frase2.png"
         text="Hasta que lo inconsciente no se haga consciente, esto seguirá dirigiendo tu vida, y Tú lo 
 llamaras destino"
       />
