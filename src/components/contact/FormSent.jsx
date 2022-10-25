@@ -2,7 +2,7 @@ import React from "react";
 
 const FormSent = ({ setState }) => {
   return (
-    <div className="px-2 flex flex-col gap-4 font-roboto">
+    <div className="px-4 flex flex-col gap-4 font-roboto">
       <h1 className="font-bold text-[24px]">
         ¡Muchas gracias por tu consulta!
       </h1>
