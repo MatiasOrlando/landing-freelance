@@ -3,7 +3,7 @@ import React from "react";
 const SenContainer = ({ text, bgImg }) => {
   return (
     <div
-      className={` w-auto lg:w-screen h-[440px]  bg-center bg-cover bg-no-repeat flex items-center justify-center`}
+      className={` w-auto lg:w-screen h-[440px]  bg-center bg-cover bg-no-repeat flex items-center justify-center px-2`}
       style={{
         backgroundImage: `url(${bgImg})`,
       }}
