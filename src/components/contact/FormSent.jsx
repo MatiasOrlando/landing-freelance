@@ -4,10 +4,10 @@ const FormSent = ({ setState }) => {
   return (
     <div className="flex flex-col gap-4 font-roboto">
       <div className="flex-col space-y-8 text-center pt-6">
-        <h1 className="font-bold text-[24px]">
+        <h1 className="font-bold text-[24px] text-left">
           ¡Muchas gracias por tu consulta!
         </h1>
-        <p className="w-auto">
+        <p className="w-[350px] xl:text-left lg:text-left md:text-left sm:text-left  xs:text-center">
           Te estaremos respondiendo lo más pronto posible al correo indicado.
         </p>
         <button

@@ -3,7 +3,7 @@ import { Icons } from "./Icons";
 
 export const Content = () => {
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center pb-4">
       <div className="px-4 flex flex-col w-[325px] pt-5">
         <h1 className="font-bold font-roboto text-[24px] pb-2">
           Hacenos tu consulta por mail
