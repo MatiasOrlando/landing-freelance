@@ -2,7 +2,7 @@ import React from "react";
 
 export const WspIcon = () => {
   return (
-    <div className="flex flex-col justify-center shadow-lg items-center rounded-[25px] bg-secondary text-[#fff] w-[40px] h-[40px] px-4 ">
+    <div className="flex flex-col justify-center shadow-lg items-center rounded-[25px] bg-secondary text-[#fff] w-[41px] h-[40px] px-4 fixed bottom-[40px] right-[40px] z-99999">
       <svg
         width="24"
         height="24"
