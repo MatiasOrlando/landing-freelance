@@ -12,27 +12,39 @@ SwiperCore.use([Navigation, Pagination, A11y]);
 const data = [
   {
     id: 1,
-    username: "Matias",
+    username: "Lorena",
     testimonial:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quo perspiciatis iure nihil illum, hic voluptates voluptate aspernatur sequi.",
+      "Una atención excepcional!! Destaco el profesionalismo y el amor con el que desarrolla su trabajo. Más que agradecida y feliz.",
   },
   {
     id: 2,
-    username: "Pablo",
+    username: "Rodrigo",
     testimonial:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quo perspiciatis iure nihil illum, hic voluptates voluptate aspernatur sequi.",
+      "Si buscas un cambio, un giro, una vuelta de rosca o un sacudon te recomiendo a full a Aylén. Recordá que el cambio empieza por vos.",
   },
   {
     id: 3,
-    username: "Javier",
+    username: "Julián",
     testimonial:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quo perspiciatis iure nihil illum, hic voluptates voluptate aspernatur sequi.",
+      "Es una experiencia por la que hay que transitar. Hago énfasis en la comodidad y seguridad que Aylén transmite. Super recomendada.",
   },
   {
     id: 4,
-    username: "Martin",
+    username: "Sofía",
     testimonial:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quo perspiciatis iure nihil illum, hic voluptates voluptate aspernatur sequi.",
+      "Me encanto su atención y calidez. Atención super profesional y muy cálida.",
+  },
+  {
+    id: 5,
+    username: "Andrea",
+    testimonial:
+      "Muy profesional, seriedad recomendable 100%. La atención es excelente y me sentí contenida a cada paso.",
+  },
+  {
+    id: 6,
+    username: "Eugenia",
+    testimonial:
+      "Me alegro haber elegido este camino y que aylén haya estado ahí para acompañarme. Super recomendada, muy profesional.",
   },
 ];
 
@@ -78,12 +90,10 @@ const Carrousel = () => {
               width: 480,
               slidesPerView: 1,
             },
-            // when window width is >= 640px
             640: {
               width: 640,
               slidesPerView: 1,
             },
-            // when window width is >= 768px
             768: {
               width: 768,
               slidesPerView: 2,
@@ -104,18 +114,18 @@ const Carrousel = () => {
               key={user.id}
               className="flex items-center justify-center slide pb-1"
             >
-              <div className="slide-content xl:w-[397px] lg:w-[397px] md:w-[350px] sm: w-[397px] xs:w-[300px] bg-primary  rounded-[8px]  text-[18px]  p-2">
-                <p className="flex justify-center text-[white] text-center user-testimonial lg:text-lg md:text-base sm:text-base xs: text-sm pt-[20px] ">
+              <div className="slide-content xl:h-[308px] lg:h-[308px] md:h-[295px] sm:h-[260px] xs:h-[238px] xl:w-[397px] lg:w-[397px] md:w-[350px] sm: w-[397px] xs:w-[290px] bg-primary  rounded-[8px]  text-[18px]  p-2">
+                <p className="flex justify-center text-[white] text-center user-testimonial lg:text-lg md:text-base sm:text-base xs: text-sm pt-[20px] xl:h-[140px] lg:h-[140px] md:h-[130px] sm:h-[100px] xs:h-[85px]   hola">
                   <i>"{user.testimonial}"</i>
                 </p>
-                <div className="flex justify-center slide-inner">
+                <div className="flex justify-center slide-inner chau">
                   <img
                     src="/assets/reviewphoto.png"
                     alt="client photo"
                     className="user-photo flex justify-center pt-[32px]"
                   />
                 </div>
-                <h5 className="flex justify-center text-[white] pb-2 lg:text-lg md:text-base sm:text-base xs: text-sm pt-[16px]">
+                <h5 className="flex justify-center text-[white] pb-2 lg:text-lg md:text-base sm:text-base xs: text-sm pt-[16px] ok">
                   {user.username}
                 </h5>
               </div>

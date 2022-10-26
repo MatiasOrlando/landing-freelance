@@ -8,7 +8,7 @@ const FormSent = ({ setState }) => {
           ¡Muchas gracias por tu consulta!
         </h1>
         <p className="w-[350px] xl:text-left lg:text-left md:text-left sm:text-left  xs:text-center">
-          Te estaremos respondiendo lo más pronto posible al correo indicado.
+          Te estaré respondiendo lo más pronto posible al correo indicado.
         </p>
         <button
           onClick={() => setState(false)}
