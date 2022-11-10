@@ -75,7 +75,7 @@ const Navbar = () => {
                     <img
                       src="/assets/facebook.png"
                       style={{ color: "#FDCAE1" }}
-                      className="w-[11.34px] h-[20px]"
+                      className="w-[11.34px] h-[20px] ml-1"
                     />
                     <span className="xl:pl-2 lg:pl-2 md:pl-2 sm:pl-4 xs:pl-5">
                       /terapias
