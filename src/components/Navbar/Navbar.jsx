@@ -60,24 +60,26 @@ const Navbar = () => {
               }`}
             >
               <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-                <li className="text-black hover:text-indigo-200">
-                  <p style={{ color: "#FDCAE1" }} className="flex hidden">
+                <li className="text-black hover:text-indigo-200 ">
+                  <p style={{ color: "#FDCAE1" }} className="flex">
                     <img
                       src="/assets/instagram.png"
                       style={{ color: "#FDCAE1" }}
-                      className="w-[22px] h-[22px] object-none"
+                      className="w-[22px] h-[22px]"
                     />{" "}
-                    @xxxxxx
+                    <span className="pl-2">@terapias</span>
                   </p>
                 </li>
                 <li className="text-black hover:text-indigo-200">
-                  <p style={{ color: "#FDCAE1" }} className="flex hidden">
+                  <p style={{ color: "#FDCAE1" }} className="flex">
                     <img
                       src="/assets/facebook.png"
                       style={{ color: "#FDCAE1" }}
-                      className="w-[9.34px] h-[18px]"
+                      className="w-[11.34px] h-[20px]"
                     />
-                    /xxxxxx
+                    <span className="xl:pl-2 lg:pl-2 md:pl-2 sm:pl-4 xs:pl-5">
+                      /terapias
+                    </span>
                   </p>
                 </li>
               </ul>
