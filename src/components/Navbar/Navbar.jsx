@@ -72,11 +72,13 @@ const Navbar = () => {
                 </li>
                 <li className="text-black hover:text-indigo-200">
                   <p style={{ color: "#FDCAE1" }} className="flex">
-                    <img
-                      src="/assets/facebook.png"
-                      style={{ color: "#FDCAE1" }}
-                      className="w-[11.34px] h-[20px] xl:ml-2 lg:ml-2 md:ml-1 sm:ml-1 xs:ml-1"
-                    />
+                    <div className="ml-0">
+                      <img
+                        src="/assets/facebook.png"
+                        style={{ color: "#FDCAE1" }}
+                        className="w-[11.34px] h-[20px] xl:ml-2 lg:ml-2 md:ml-1 sm:ml-1 xs:ml-1"
+                      />
+                    </div>
                     <span className="xl:pl-2 lg:pl-2 md:pl-2 sm:pl-5 xs:pl-5">
                       /terapias
                     </span>
