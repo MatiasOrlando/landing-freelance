@@ -11,7 +11,7 @@ const Banner = () => {
         </h1>
         <p className="text-[#fff] text-[14px] lg:text-[21px]  sm:text-[16px] xs:text-[10px]  px-4 lg:px-0 font-normal w-auto h-auto lg:w-[503px] md:w-[440px] sm:w-[440px]  xs:w-[390px]  lg:h-[89px] text-center">
           Como terapeuta holística, encontraremos la herramienta que mas resuene
-          con vos, y así lograr juntos tu más alto bienestar. ¿Estas listo?
+          con vos, y así lograr juntos tu más alto bienestar. ¿Estás listo?
         </p>
       </div>
       <Link to="contact" smooth={true} duration={500}>

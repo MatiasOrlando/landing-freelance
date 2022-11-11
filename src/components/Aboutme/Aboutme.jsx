@@ -37,7 +37,7 @@ const Aboutme = () => {
         </div>
       </div>
       <div className="lg:w-1/2 md:w-1/2 sm:w-1/2 xs:w-full  xl:h-[600px] lg:h-[500px] md:h-[400px] sm:h-[350px] xs:h-[380px]   bg-cover">
-        <img src="assets/test2.jpg" className="w-full h-full " />
+        <img src="assets/test3.jpg" className="w-full h-full " />
       </div>
     </div>
   );
